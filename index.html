@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Redesigned</title>
+    <meta name="description" content="A premium redesigned experience of Spotify Web Player">
+    
+    <!-- Google Fonts: Outfit for that clean, premium geometric look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Ionicons for scalable vector icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar glass-panel">
+            <div class="logo-container">
+                <ion-icon name="musical-notes" class="logo-icon"></ion-icon>
+                <span class="logo-text">Spotify</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="#"><ion-icon name="home"></ion-icon> <span>Home</span></a></li>
+                    <li><a href="#"><ion-icon name="search"></ion-icon> <span>Search</span></a></li>
+                    <li><a href="#"><ion-icon name="library"></ion-icon> <span>Your Library</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-section">
+                <h4 class="section-title">PLAYLISTS</h4>
+                <ul class="playlist-nav">
+                    <li><a href="#"><div class="icon-box add"><ion-icon name="add"></ion-icon></div> <span>Create Playlist</span></a></li>
+                    <li><a href="#"><div class="icon-box liked"><ion-icon name="heart"></ion-icon></div> <span>Liked Songs</span></a></li>
+                </ul>
+                <div class="scrollable-playlists">
+                    <!-- Dynamic interaction place holder -->
+                    <a href="#" class="playlist-item">Chill Vibes</a>
+                    <a href="#" class="playlist-item">Late Night Drive</a>
+                    <a href="#" class="playlist-item">Gym Motivation</a>
+                    <a href="#" class="playlist-item">Focus Flow</a>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-bar glass-panel-light">
+                <div class="nav-controls">
+                    <button class="circle-btn"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="circle-btn"><ion-icon name="chevron-forward"></ion-icon></button>
+                </div>
+                <div class="user-controls">
+                    <button class="upgrade-btn">Explore Premium</button>
+                    <div class="user-profile">
+                        <img src="https://ui-avatars.com/api/?name=User&background=random" alt="User" class="avatar">
+                        <span class="username">Acer User</span>
+                        <ion-icon name="caret-down"></ion-icon>
+                    </div>
+                </div>
+            </header>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <h1 class="greeting">Good Evening</h1>
+                <div class="recent-grid">
+                    <!-- Dynamically populated or static for now -->
+                    <div class="recent-card glass-card">
+                        <img src="https://picsum.photos/seed/1/100" alt="Album Art">
+                        <span>On Repeat</span>
+                        <button class="play-btn-hover"><ion-icon name="play"></ion-icon></button>
+                    </div>
+                    <div class="recent-card glass-card">
+                        <img src="https://picsum.photos/seed/2/100" alt="Album Art">
+                        <span>Daily Mix 1</span>
+                        <button class="play-btn-hover"><ion-icon name="play"></ion-icon></button>
+                    </div>
+                    <div class="recent-card glass-card">
+                        <img src="https://picsum.photos/seed/3/100" alt="Album Art">
+                        <span>Discover Weekly</span>
+                        <button class="play-btn-hover"><ion-icon name="play"></ion-icon></button>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured Section -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Made for you</h2>
+                    <a href="#" class="see-all">Show all</a>
+                </div>
+                <div class="cards-container">
+                    <div class="music-card glass-card">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/seed/pop/300" alt="Cover">
+                            <button class="play-btn-card"><ion-icon name="play"></ion-icon></button>
+                        </div>
+                        <h3>Pop smooth</h3>
+                        <p>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    
+                    <div class="music-card glass-card">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/seed/rock/300" alt="Cover">
+                            <button class="play-btn-card"><ion-icon name="play"></ion-icon></button>
+                        </div>
+                        <h3>Rock Classics</h3>
+                        <p>Legends of rock, all in one place.</p>
+                    </div>
+                    
+                    <div class="music-card glass-card">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/seed/jazz/300" alt="Cover">
+                            <button class="play-btn-card"><ion-icon name="play"></ion-icon></button>
+                        </div>
+                        <h3>Jazz Vibes</h3>
+                        <p>Soft jazz for your evening study session.</p>
+                    </div>
+                    
+                    <div class="music-card glass-card">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/seed/indie/300" alt="Cover">
+                            <button class="play-btn-card"><ion-icon name="play"></ion-icon></button>
+                        </div>
+                        <h3>Indie Waves</h3>
+                        <p>New and upcoming indie artists.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Player Control Bar -->
+        <footer class="player-bar glass-panel-heavy">
+            <div class="now-playing">
+                <img src="https://picsum.photos/seed/current/60" alt="Current Album" class="current-art">
+                <div class="track-info">
+                    <div class="track-name">Midnight City</div>
+                    <div class="artist-name">M83</div>
+                </div>
+                <button class="like-btn"><ion-icon name="heart-outline"></ion-icon></button>
+            </div>
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="control-btn shuffle"><ion-icon name="shuffle"></ion-icon></button>
+                    <button class="control-btn prev"><ion-icon name="play-skip-back"></ion-icon></button>
+                    <button class="control-btn play-pause-main" id="playPauseBtn"><ion-icon name="play-circle"></ion-icon></button>
+                    <button class="control-btn next"><ion-icon name="play-skip-forward"></ion-icon></button>
+                    <button class="control-btn repeat"><ion-icon name="repeat"></ion-icon></button>
+                </div>
+                <div class="playback-bar">
+                    <span class="time current">0:00</span>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="time total">4:03</span>
+                </div>
+            </div>
+            <div class="volume-controls">
+                <ion-icon name="volume-medium"></ion-icon>
+                <div class="volume-slider">
+                    <div class="volume-level"></div>
+                </div>
+                <ion-icon name="expand"></ion-icon>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
